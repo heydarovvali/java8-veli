@@ -5,7 +5,7 @@ public class DovrlerMisalWhile {
 		int a =4;
 		while (a <=10)
 			System.out.println(a);
-		a++
+		
 		
 	}
     
