@@ -10,12 +10,7 @@ public class DovrlerMisalWhile {
 	}
 	System.out.println("bitdi");
 	
-	int s = 3;
-	while (a <= 20) {
-		System.out.println(s);
-		s++;
-		
-	}
+	
 }
 }
 

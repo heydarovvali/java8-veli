@@ -23,8 +23,7 @@ public class operatorlar {
 		System.out.println(number % 5);
 		
 		int x = 36;
-		int s = x % 3;
-		if(s == 0) {
+		if(x % 3==0 && x % 7==0) {
 			System.out.println("qaliqsiz bolunur");
 		}
 		else {

@@ -6,10 +6,13 @@ public class DovrlerMisal2 {
 	public static void main(String[] args) {
 		System.out.println("basladi");
 		 for (int a = 1; a <= 10; a++) {
-			 System.out.println("Salam dunya");
+			 System.out.println(a);
+			 if (a > 3) {
+				 break;
+				 
+			 }
 			 
 		 }
-		 System.out.println("bitdi");
 		 
 	}
 
