@@ -4,7 +4,7 @@ public class Dovrler {
        
 	public static void main(String[] args) {
 		 
-		 int eded = 25251010;
+		 int eded = 25251011;
 		 int cem = 0;
 		 while(eded != 0) {
 			 int qaliq = eded%10;

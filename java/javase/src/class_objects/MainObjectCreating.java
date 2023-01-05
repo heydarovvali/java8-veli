@@ -8,6 +8,7 @@ public static void main(String[] args) {
 	bmw.color="green";
 	bmw.speed=220;
 	
+	
 	Car kia = new Car();
 	kia.color="red";
 	kia.speed=300;

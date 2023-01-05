@@ -2,64 +2,38 @@ package class_object;
 
 public class MainClass {
 	public static void main(String[] args) {
-		Book p1 = new Book();
-		Book p2 = new Book();
 		
+		Book b1 = new Book();
+		Book b2 = new Book();
 		
-		p1.id = 10;
-		p1.name = "BMW";
-		p1.seria = "M5 CS";
-		p1.toopspeed = 330;
-		p1.horsepower = "612";
-		
-		
-		p2.id = 20;
-		p2.name = "Lambo";
-		p2.seria = "Urus";
-		p2.toopspeed = 330;
-		p2.horsepower = "625";
-		
-		System.out.println(p1.id);
-		System.out.println(p1.name);
-		System.out.println(p1.seria);
-		System.out.println(p1.toopspeed);
-		System.out.println(p1.horsepower);
-		
-		System.out.println("-------");
-		
-		System.out.println(p2.id);
-		System.out.println(p2.name);
-		System.out.println(p2.seria);
-		System.out.println(p2.toopspeed);
-		System.out.println(p2.horsepower);
+		b1.id = 50;
+		b1.name = "Java";
+		b1.author = "James Grosling";
+		b1.pageCount = 100;
+		b1.description = "Program";
 		
 		
 		
+		b2.id = 55;
+		b2.name = "Cinayet ceza";
+		b2.author = "Dostoyevski";
+		b2.pageCount = 120;
+		b2.description = "Literature";
 		
 		
+		System.out.println(b1.id);
+		System.out.println(b1.name);
+		System.out.println(b1.author);
+		System.out.println(b1.pageCount);
+		System.out.println(b1.description);
 		
+		System.out.println("-----------");
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(b2.id);
+		System.out.println(b2.name);
+		System.out.println(b2.author);
+		System.out.println(b2.pageCount);
+		System.out.println(b2.description);
 	}
 
 }
