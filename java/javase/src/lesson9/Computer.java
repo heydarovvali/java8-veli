@@ -8,17 +8,20 @@ public class Computer {
 
 	Computer() {
 		System.out.println("default");
+
 	}
 
-	Computer(String brand) {
-		System.out.println(brand);
-		this.brand = brand;
+	Computer(String model) {
+		System.out.println(model);
+		this.model = model;
+
 	}
 
 	Computer(String model, String color) {
 		System.out.println(model + color);
 		this.model = model;
 		this.color = color;
+
 	}
 
 }

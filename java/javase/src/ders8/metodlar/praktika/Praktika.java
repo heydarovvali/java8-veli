@@ -2,7 +2,6 @@ package ders8.metodlar.praktika;
 
 public class Praktika {
 	public static void main(String[] args) {
-
 		int telebe1Bali = 78;
 		int telebe2Bali = 91;
 		int telebe3Bali = 55;
@@ -14,10 +13,11 @@ public class Praktika {
 		System.out.println("telebe1Xali : " + telebe1Xali);
 		System.out.println("telebe2Xali : " + telebe2Xali);
 		System.out.println("telebe3Xali : " + telebe3Xali);
+
 	}
 
 	static char qiymetVer(int bal) {
-		char kateqoriya = 'A';
+		char kateqoriya;
 		if (bal > 90) {
 			kateqoriya = 'A';
 		} else if (bal > 80) {
@@ -33,4 +33,5 @@ public class Praktika {
 		}
 		return kateqoriya;
 	}
+
 }
