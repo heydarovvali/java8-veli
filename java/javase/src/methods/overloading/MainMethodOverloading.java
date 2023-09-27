@@ -5,6 +5,7 @@ public class MainMethodOverloading {
          
 		 MainMethodOverloading m = new  MainMethodOverloading();
 		 m.sum(1, 2);
+		 m.sum("g", 9);
 		 
 	}
 	
@@ -16,6 +17,7 @@ public class MainMethodOverloading {
 	}
 	
 	public void sum(String name,int b) {
+		System.out.println(name+b);
 		
 	}
 }
