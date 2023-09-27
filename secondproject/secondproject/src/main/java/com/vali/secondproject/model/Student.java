@@ -7,5 +7,9 @@ import lombok.Setter;
 @Getter
 public class Student {
     private String name;
-    private int age;
+    private String surName;
+
+
+
+    
 }
