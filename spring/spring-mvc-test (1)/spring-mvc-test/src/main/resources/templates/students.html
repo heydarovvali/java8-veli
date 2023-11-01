@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Telebeler</title>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <form th:action="@{/students/search}">
+                <input name="q">
+            </form>
+
+            <a th:href="@{/students/open-save}">Yeni telebe qeydi</a>
+
+            <table  class="table table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Adı</th>
+                    <th>Tevellud</th>
+                    <th>Sektor</th>
+
+                    <th> </th>
+
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="s : ${students}">
+                    <td th:text="${s.id}"></td>
+                    <td th:text="${s.name}"></td>
+
+                    <td th:text="${s.birthday}"></td>
+                    <td th:text="${s.sector}"></td>
+
+                    <td>
+                        <a onclick="return confirm('eminsen?')" th:href="@{/students/{id}(id=${s.id})}">SIL</a>
+
+                        <br>
+                        <a   th:href="@{/students/edit/{id}(id=${s.id})}">redakte</a>
+
+
+
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
